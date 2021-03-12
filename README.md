@@ -26,6 +26,7 @@ tire slip angle은 선회시 side slip이 발생하게 된다. 마찬가지로 �
 - Esp logic
 ![캡처](https://user-images.githubusercontent.com/79674592/110909514-81509c00-8353-11eb-92d8-cd16acb10e3a.PNG)
 ![캡처](https://user-images.githubusercontent.com/79674592/110909910-fe7c1100-8353-11eb-9ea5-43a114c2ff43.PNG)
+
 해당 값에 비례제어를 하기 위해 현재 측정한 yaw rate을 feedback으로 주어 비례제어를 시행한다.
 
 5. Result
