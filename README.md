@@ -7,7 +7,7 @@ ESP controller using lateral vehicle model
 
 ![캡처](https://user-images.githubusercontent.com/79674592/110897218-63c60700-8340-11eb-965f-552f9dc20410.PNG)
 
-횡방향 모델을 힘과 토크의 관점에서 해석한 식이다. x축방향은 일정하다고 가정하고 y축방향의 힘은 y축방향의 성분의 힘의 합과 원심력에 의한 힘으로 표현할 수 있다. 토크의 경우 뒷바퀴는 회전하지 않기 때문에 앞바퀴와 다르게 반대로 모멘트가 작용한다.
+횡방향 모델을 힘과 횡가속도 관점에서 해석한 방정식이다. x축방향은 일정하다고 가정하고 y축방향의 힘은 y축방향의 성분의 힘의 합과 원심력에 의한 힘으로 표현할 수 있다. 횡가속도의 경우 뒷바퀴는 회전하지 않기 때문에 앞바퀴와 다르게 반대로 모멘트가 작용한다.
 
 2. tire model
 
@@ -21,7 +21,13 @@ tire slip angle은 선회시 side slip이 발생하게 된다. 마찬가지로 �
 
 4. ESP Controller
 
-- idea : 선회시 모멘트를 추가로 보상하여 언더스티어가 발생하지 않게 하자.
+- idea : 선회시 횡가속도 방정식에 모멘트를 추가로 보상하여 언더스티어가 발생하지 않게 하자.
 
 - Esp logic
+![캡처](https://user-images.githubusercontent.com/79674592/110909514-81509c00-8353-11eb-92d8-cd16acb10e3a.PNG)
+![캡처](https://user-images.githubusercontent.com/79674592/110909910-fe7c1100-8353-11eb-9ea5-43a114c2ff43.PNG)
+해당 값에 비례제어를 하기 위해 현재 측정한 yaw rate을 feedback으로 주어 비례제어를 시행한다.
 
+5. Result
+
+![result](https://user-images.githubusercontent.com/79674592/110910244-6a5e7980-8354-11eb-8976-2b254b02a89d.png)
