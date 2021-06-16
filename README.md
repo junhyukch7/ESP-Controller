@@ -3,7 +3,7 @@ ESP controller using lateral vehicle model
 
 1. Later vehicle model
 
-![캡처](https://user-images.githubusercontent.com/79674592/110896165-60318080-833e-11eb-80b8-7b278f626f45.PNG)
+<img src="https://github.com/junhyukch7/ESP-Controller/blob/main/image/2.png" width="50%">
 
 ![캡처](https://user-images.githubusercontent.com/79674592/110897218-63c60700-8340-11eb-965f-552f9dc20410.PNG)
 
@@ -24,8 +24,10 @@ tire slip angle은 선회시 side slip이 발생하게 된다. 마찬가지로 �
 - idea : 선회시 횡가속도 방정식에 모멘트를 추가로 보상하여 언더스티어가 발생하지 않게 하자.
 
 - Esp logic
-![캡처](https://user-images.githubusercontent.com/79674592/110909514-81509c00-8353-11eb-92d8-cd16acb10e3a.PNG)
-![캡처](https://user-images.githubusercontent.com/79674592/110909910-fe7c1100-8353-11eb-9ea5-43a114c2ff43.PNG)
+
+<img src="https://github.com/junhyukch7/ESP-Controller/blob/main/image/formula1.png" width="20%">
+
+<img src="https://github.com/junhyukch7/ESP-Controller/blob/main/image/formula2.png" width="20%">
 
 해당 값에 비례제어를 하기 위해 현재 측정한 yaw rate을 feedback으로 주어 비례제어를 시행한다.
 
