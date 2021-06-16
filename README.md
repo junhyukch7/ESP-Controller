@@ -9,9 +9,9 @@ ESP controller using lateral vehicle model
 
 횡방향 모델을 힘과 횡가속도 관점에서 해석한 방정식이다. x축방향은 일정하다고 가정하고 y축방향의 힘은 y축방향의 성분의 힘의 합과 원심력에 의한 힘으로 표현할 수 있다. 횡가속도의 경우 뒷바퀴는 회전하지 않기 때문에 앞바퀴와 다르게 반대로 모멘트가 작용한다.
 
-2. tire model
+2. ire model
 
-![캡처](https://user-images.githubusercontent.com/79674592/110897657-2c0b8f00-8341-11eb-8331-d55a0702f6b4.PNG)
+<img src="https://github.com/junhyukch7/ESP-Controller/blob/main/image/3.png" width="70%">
 
 tire slip angle은 선회시 side slip이 발생하게 된다. 마찬가지로 앞바퀴의 경우 회전하기 때문에 lfr만큼 앞바퀴에 속도가 더 붙지만 뒷바퀴의 경우 회전하지 않아 회전시 lfr만큼 저항이 발생하게 된다. 
 
