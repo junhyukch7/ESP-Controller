@@ -13,7 +13,7 @@ ESP controller using lateral vehicle model
 
 <img src="https://github.com/junhyukch7/ESP-Controller/blob/main/image/3.png" width="70%">
 
-tire slip angle은 선회시 side slip이 발생하게 된다. 마찬가지로 앞바퀴의 경우 회전하기 때문에 lfr만큼 앞바퀴에 속도가 더 붙지만 뒷바퀴의 경우 회전하지 않아 회전시 lfr만큼 저항이 발생하게 된다. 
+tire slip angle은 선회시 side slip이 발생하게 된다. 마찬가지로 앞바퀴의 경우 회전하기 때문에 lfr만큼 앞바퀴에 가속도가 더 붙지만 뒷바퀴의 경우 회전하지 않아 회전시 lfr만큼 저항이 발생하게 된다. (각가속도 * 반지름 = 가속도 = lfr)
 
 3. X-Y position
 
